@@ -28,7 +28,7 @@ read link1
 wget $link1 -P /etc/openvpnservers/
 
 echo link to service name
-wget -P /etc/systemd/system/
+wget https://github.com/AriBerisha/SimpleMining-OpenVPN/blob/main/simpleminingvpn.txt -P /etc/systemd/system/
 
 mv /etc/systemd/system/simpleminingvpn.txt /etc/systemd/system/simpleminingvpn.service
 
