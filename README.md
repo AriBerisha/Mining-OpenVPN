@@ -13,7 +13,13 @@ Tested on Ubuntu 18.04 Based Mining OS's
 2. Run the following commands on the directory where the bash script is
 ```
     cd SimpleMining-OpenVPN
+```
+
+```
     sudo chmod u+x simpleminingvpn.sh
+```
+
+```
     sudo ./simpleminingvpn.sh
 ```
 
