@@ -1,5 +1,5 @@
 # SimpleMining-OpenVPN
-Easily install VPN on simplemining
+Easily install VPN on Ubuntu 18.04 Based Mining OS's
 
 
 # Instructions
