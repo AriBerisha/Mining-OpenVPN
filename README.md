@@ -6,6 +6,14 @@ Easily install VPN on Ubuntu 18.04 Based Mining OS's
 git clone https://github.com/AriBerisha/SimpleMining-OpenVPN.git
 ```
 
+# Add this to your ovpn file! then reboot
+```
+script-security 2
+up /etc/openvpn/update-systemd-resolved
+down /etc/openvpn/update-systemd-resolved
+down-pre
+```
+
 # Instructions
 Tested on Ubuntu 18.04 Based Mining OS's
 
@@ -22,6 +30,8 @@ Tested on Ubuntu 18.04 Based Mining OS's
 ```
     sudo ./simpleminingvpn.sh
 ```
+
+
 
 3. Insert link to ovpn file, script uses wget and you can use something like Dropbox,Drive,Transfer.sh
 4. Reboot if any problems and you're set!
