@@ -1,0 +1,10 @@
+[Unit]                                                                                                                                                                                                             
+Description=Simple Mining with OpenVPN made by ari!                                                                                                                                                                                         
+After=multi-user.target                                                                       
+                                                                                                                                                                                                                   
+[Service]                                                                                                                                                                                                          
+Type=idle                                                                                                                                                                                                          
+ExecStart=/usr/sbin/openvpn --config /etc/openvpnservers/Server.ovpn                                                                                                                                               
+                                                                                                                                                                                                                   
+[Install]                                                                                                                                                                                                          
+WantedBy=multi-user.target
