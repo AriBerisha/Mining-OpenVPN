@@ -25,7 +25,7 @@ echo Insert link to ovpn file!
 
 read link1
 
-wget $link1 -P /etc/openvpnservers/
+wget $link1 -O /etc/openvpnservers/Server.ovpn
 
 echo link to service name
 wget https://github.com/AriBerisha/SimpleMining-OpenVPN/blob/main/simpleminingvpn.txt -P /etc/systemd/system/
@@ -35,6 +35,9 @@ mv /etc/systemd/system/simpleminingvpn.txt /etc/systemd/system/simpleminingvpn.s
 systemctl daemon-reload
 
 systemctl enable simpleminingvpn.service
+
+
+echo Enjoy!
 
 
 
