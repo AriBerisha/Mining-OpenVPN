@@ -16,9 +16,40 @@ wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub
 
 apt-key add openvpn-repo-pkg-key.pub
 
+PS3='Choose Your OS: '
+versions=("debian11" "ubuntu18" "ubuntu21" "Quit")
+ubuntu=18
+select ver in "${versions[@]}"; do
+    case $ver in
+        "debian11")
+            echo "You chose Debian 11"
+            # optionally call a function or run some code here
+            ubuntu=bullseye
+            break
+            ;;
+        "ubuntu18")
+            echo "you chose Ubuntu 18.04"
+            # optionally call a function or run some code here
+            ubuntu=bionic
+            break
+            ;;
+        "ubuntu21")
+            echo "you chose Ubuntu 21.04"
+            # optionally call a function or run some code here
+            ubuntu=hirsute
+            break
+            ;;
+        "Quit")
+            echo "User requested exit"
+            exit
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
 
-wget -O /etc/apt/sources.list.d/openvpn3.list https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-bionic.list
+
+wget -O /etc/apt/sources.list.d/openvpn3.list https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-$ubuntu.list
 
 
 apt update
