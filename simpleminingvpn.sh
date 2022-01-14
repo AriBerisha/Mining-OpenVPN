@@ -59,8 +59,15 @@ apt install openvpn
 apt install openvpn-systemd-resolved
 echo Done installing requirements...
 
-
+echo "Creating directory /etc/openvpnservers"
 mkdir /etc/openvpnservers/
+echo Done
+
+echo "Creating NordVPN login.conf if you want to use it"
+
+touch /etc/openvpnservers/login.conf
+
+
 
 echo Insert link to ovpn file!
 

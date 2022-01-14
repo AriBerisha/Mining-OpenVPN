@@ -13,6 +13,14 @@ up /etc/openvpn/update-systemd-resolved
 down /etc/openvpn/update-systemd-resolved
 down-pre
 ```
+If using NordVPN
+```
+auth-user-pass /etc/openvpnservers/login.conf
+script-security 2
+up /etc/openvpn/update-systemd-resolved
+down /etc/openvpn/update-systemd-resolved
+down-pre
+```
 
 # Instructions
 Tested on Ubuntu 18.04 Based Mining OS's
