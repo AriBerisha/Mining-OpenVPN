@@ -65,11 +65,12 @@ echo Done
 
 echo "Creating NordVPN login.conf if you want to use it"
 
-touch /etc/openvpnservers/login.conf
 cat > /etc/openvpnservers/login.conf << EOF
 Username here
 Password here
 EOF
+
+echo Done!
 
 
 
