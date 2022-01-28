@@ -47,3 +47,12 @@ Should work on Debian 11 and Ubuntu 20.04
 3. Insert link to ovpn file, script uses wget and you can use something like Dropbox,Drive,Transfer.sh
 4. Reboot if any problems and you're set!
 5. If you run into issues with network, to undo just do systemctl disable simpleminingvpn.service
+
+
+
+# P.S If you have issues installing the repositories
+Your mining machine could have bad ntp config and bad timezonedate , use the command below to fix
+
+```
+sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+```
