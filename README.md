@@ -22,6 +22,8 @@ down /etc/openvpn/update-systemd-resolved
 down-pre
 ```
 
+Edit the login.conf with credentials provided from nordvpn in /etc/openvpnservers/
+
 
 # Instructions
 Tested on Ubuntu 18.04 Based Mining OS's
