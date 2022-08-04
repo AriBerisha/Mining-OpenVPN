@@ -58,3 +58,6 @@ Your mining machine could have bad ntp config and bad timezonedate , use the com
 ```
 sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
 ```
+
+
+And lastly do systemctl enable simpleminingvpn.service
