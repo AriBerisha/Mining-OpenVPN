@@ -81,7 +81,7 @@ read link1
 wget ${link1} -O /etc/openvpnservers/Server.ovpn
 
 echo Getting service file from github...
-wget https://github.com/AriBerisha/SimpleMining-OpenVPN/blob/main/simpleminingvpn.txt -P /etc/systemd/system/
+wget https://raw.githubusercontent.com/AriBerisha/Mining-OpenVPN/main/simpleminingvpn.txt -P /etc/systemd/system/
 
 echo Done!
 
